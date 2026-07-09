@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Immersive Dynamic Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Immersive Dynamic Image Gallery</h1>
+      <p>
+        Explore a collection of captivating images with dynamic filtering and
+        search capabilities.
+      </p>
+    </header>
+    <main>
+      <div class="controls">
+        <input type="text" id="search" placeholder="🔍 Search images..." />
+
+        <div class="buttons">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="nature">Nature</button>
+          <button class="filter-btn" data-category="architecture">
+            Architecture
+          </button>
+          <button class="filter-btn" data-category="tech">Tech</button>
+        </div>
+      </div>
+
+      <div class="gallery-container">
+        <div
+          class="image-container"
+          data-category="architecture"
+          data-title="Architecture Image 1"
+        >
+          <img src="./Images/1.jpg" alt="Image 1" />
+        </div>
+        <div
+          class="image-container"
+          data-category="nature"
+          data-title="Nature Image 1"
+        >
+          <img src="./Images/2.jpg" alt="Image 2" />
+        </div>
+        <div
+          class="image-container"
+          data-category="tech"
+          data-title="Tech Image 1"
+        >
+          <img src="./Images/3.jpg" alt="Image 3" />
+        </div>
+        <div
+          class="image-container"
+          data-category="tech"
+          data-title="Tech Image 2"
+        >
+          <img src="./Images/4.jpg" alt="Image 4" />
+        </div>
+        <div
+          class="image-container"
+          data-category="nature"
+          data-title="Nature Image 2"
+        >
+          <img src="./Images/5.jpg" alt="Image 5" />
+        </div>
+        <div
+          class="image-container"
+          data-category="architecture"
+          data-title="Architecture Image 2"
+        >
+          <img src="./Images/6.jpg" alt="Image 6" />
+        </div>
+        <div
+          class="image-container"
+          data-category="tech"
+          data-title="Tech Image 3"
+        >
+          <img src="./Images/7.jpg" alt="Image 7" />
+        </div>
+        <div
+          class="image-container"
+          data-category="nature"
+          data-title="Nature Image 3"
+        >
+          <img src="./Images/8.jpg" alt="Image 8" />
+        </div>
+        <div
+          class="image-container"
+          data-category="architecture"
+          data-title="Architecture Image 3"
+        >
+          <img src="./Images/9.jpg" alt="Image 9" />
+        </div>
+        <div
+          class="image-container"
+          data-category="tech"
+          data-title="Tech Image 4"
+        >
+          <img src="./Images/10.jpg" alt="Image 10" />
+        </div>
+      </div>
+
+      <div class="modal">
+        <img src="" alt="" class="full-image" />
+        <p class="caption"></p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
